@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s ease;
+}
+
+.foo {
+    background-color: rgb(252, 226, 242);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+    padding: 1pc;
+}
+
+.text-lw {
+    color: #888 !important;
+
+}
+
+.theme1-link {
+    text-decoration: none;
+}
+
+.foo-theme-title {
+    display: flex;
+    align-items: center;
+}
+.foo-t-t {
+    color: #000;
+    font-size: 2rem;
+}
+
+.foo-central {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1pc;
+    width: 80%;
+}
+
+/* there are 2 items currently - if more are added, consider revising box layout */
+.foo-bx {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 1pc;
+    padding: .5pc;
+}
+
+.foo-c-lks {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+    align-items: flex-start;
+}
+
+.foo-c-title {
+    font-weight: 800;
+    font-size: large;
+}
+
+
+.foo-c-lk {
+    display: block;
+    color: #888;
+}
+
+.foo-c-lk:hover {
+    color: #000;
+}
+
+.foo-social {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+}
+
+.fs-bx {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+}
+.foo-s-lks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foo-c-s {
+    border: .1pc solid rgb(22, 8, 8);
+    border-radius: .3pc;
+    padding: .5pc;
+    
+}
+
+.foo-s-locs {
+    display: flex;
+    gap: .3pc;
+    flex-wrap: wrap;
+}
+
+.foo-s-l {
+    font-size: xx-small;
+    padding: .5pc;
+    border-radius: 1pc;
+    background-color: #999;
+    color: #fff;
+}
+
+@media only screen and (max-width: 996px) {
+    .foo-central {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+}
